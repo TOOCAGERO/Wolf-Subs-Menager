@@ -1,0 +1,56 @@
+Wolf-Subs Menager Full — biblioteki zewnętrzne / replacement libraries
+
+POLSKI
+
+Narzędzia MKVToolNix i ich biblioteki zachowują własne licencje. Ograniczenia
+dotyczące autorskiej części Wolf-Subs Menager nie ograniczają praw do tych
+składników, ich modyfikowania ani analizy w celu debugowania takich zmian.
+Odpowiadające źródła, receptury, patche i informacje o budowaniu są dostępne
+obok dokładnego wydania Full na GitHubie projektu.
+
+Normalne uruchomienie pobranego EXE sprawdza i w razie uszkodzenia odtwarza
+przygotowany zestaw plików. Aby uruchomić własną, zgodną wersję biblioteki:
+
+1. Zamknij program. Znajdź folder przygotowanych składników wybrany przy
+   pierwszym uruchomieniu Full. W nim jest podfolder runtime-full-1.5.0-...
+   zawierający plik „Wolf-Subs Menager.exe” oraz cały katalog „_internal”.
+2. Skopiuj CAŁY ten podfolder do osobnego, zapisywalnego miejsca poza folderem
+   zarządzanym przez pobrany EXE. Zachowaj strukturę i wszystkie pliki.
+3. W KOPII wymień wybraną bibliotekę na zmodyfikowaną wersję zgodną interfejsem
+   i architekturą x64/UCRT. Biblioteki narzędzi są w:
+   _internal\vendor\mkvtoolnix\
+   Przykład: _internal\vendor\mkvtoolnix\Qt6Core.dll
+4. Uruchom bezpośrednio „Wolf-Subs Menager.exe” znajdujący się w skopiowanym
+   podfolderze. Nie uruchamiaj nadrzędnego pliku pobranego z GitHuba dla tej kopii.
+
+Samodzielna kopia używa bibliotek ze swojej lokalizacji. Własny EXE aplikacji
+może pozostać niezmieniony. Wybrana kopia przechowuje ustawienia i logi obok
+siebie. Normalny zarządzany zestaw pozostaje osobno i nadal może być naprawiany.
+Udostępnione źródła nie zawierają prywatnego kodu autorskiej aplikacji Wolf.
+
+ENGLISH
+
+MKVToolNix and its libraries retain their own licences. Restrictions on the
+application's own work do not restrict rights to these components, including
+modification and reverse engineering for debugging such modifications.
+Corresponding sources, recipes, patches and build metadata accompany the exact
+Full release on the project's GitHub releases page.
+
+The downloaded launcher checks and repairs its managed runtime. To run a
+compatible modified library without automatic restoration:
+
+1. Close the application. Locate the components folder selected during first
+   preparation. Its runtime-full-1.5.0-... subfolder contains the inner
+   "Wolf-Subs Menager.exe" and the complete "_internal" directory.
+2. Copy that ENTIRE runtime subfolder to a separate writable location outside
+   the launcher's managed components directory. Keep every file and directory.
+3. Replace the chosen library in the COPY with an interface-compatible x64/UCRT
+   version. Tool libraries are under _internal\vendor\mkvtoolnix\, for example
+   _internal\vendor\mkvtoolnix\Qt6Core.dll.
+4. Run the inner "Wolf-Subs Menager.exe" directly from the copied runtime.
+   Do not use the outer downloaded launcher to start this modified copy.
+
+The independent copy uses its own libraries. The application's own executable
+can remain byte-identical. Settings and logs are stored next to that copy.
+The normal managed runtime remains separate and keeps its integrity repair.
+The published third-party sources do not contain Wolf's private application code.
