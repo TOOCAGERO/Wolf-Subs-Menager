@@ -21,12 +21,11 @@ Ochrona rozpoznanych struktur nie stanowi gwarancji dla każdego niestandardoweg
 
 ## Dwa warianty do pobrania
 
-| Twoja sytuacja | Wariant | Pobierz program |
+| Wariant | Dla kogo | Obsługa MKVToolNix |
 | --- | --- | --- |
-| **Mam już MKVToolNix** | Lite | **[Pobierz Lite — 60 MB](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Lite.exe)** |
-| **Nie mam MKVToolNix** | Full — komplet narzędzi | **[Pobierz Full — 129 MB](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Full.exe)** |
+| **Lite** | [Masz już MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Lite.exe) | Program szuka go w typowych lokalizacjach. Gdy nie znajdzie, wskażesz folder ręcznie. |
+| **Full** | [Nie chcesz osobno instalować MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Full.exe) | EXE zawiera potrzebne narzędzia. Przy pierwszym uruchomieniu przygotuje je w wybranym lub domyślnym folderze; kolejne starty wykorzystają zachowane pliki. |
 
-Lite wyszukuje MKVToolNix automatycznie; w razie potrzeby możesz wskazać jego folder ręcznie. Full zawiera narzędzia i przy pierwszym uruchomieniu pozwala wybrać folder składników.
 
 Oba warianty zawierają te same funkcje aplikacji, języki i instrukcje.
 Nie wymagają instalatora ani instalacji Pythona. Przy pierwszym starcie zapisują
@@ -108,12 +107,11 @@ recognised structures is not a guarantee for every custom subtitle format or eff
 
 ### Choose a download
 
-| Your situation | Edition | Download |
+| Edition | Intended use | MKVToolNix |
 | --- | --- | --- |
-| **I already have MKVToolNix** | Lite | **[Download Lite — 60 MB](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Lite.exe)** |
-| **I do not have MKVToolNix** | Full — tools included | **[Download Full — 129 MB](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Full.exe)** |
+| **Lite** | [You already have MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Lite.exe) | Searches common installation locations; manual folder selection remains available. |
+| **Full** | [You do not want to install MKVToolNix separately](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Full.exe) | Contains the required tools. On first launch it prepares components in a selected or default folder; later launches reuse those files. |
 
-Lite detects MKVToolNix automatically and retains manual folder selection. Full includes the tools and lets you choose a components folder on first launch.
 
 Both editions contain the same application features, languages and guides.
 No installer or Python installation is required. The first launch prepares
