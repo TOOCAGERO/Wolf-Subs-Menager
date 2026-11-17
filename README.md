@@ -44,6 +44,8 @@ Do zwykłej pracy wystarczy EXE. [Instrukcja użycia zmodyfikowanej biblioteki](
 
 ## Ustawienia i instrukcje
 
+[Instrukcja po polsku (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-Guide-PL.pdf) · [Instrukcja po angielsku (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-Guide-EN.pdf)
+
 Rozwijane menu Ustawienia otwiera osobne okna: **Instrukcja**, **Aktualizacja**,
 **Rozmiar okna**, **Język interfejsu**, dodatkowe preferencje i **O aplikacji**.
 Języki interfejsu: polski, angielski, niemiecki i niderlandzki.
@@ -127,6 +129,8 @@ patches and build metadata](https://github.com/TOOCAGERO/Wolf-Subs-Menager/relea
 For normal use download the EXE. [Using a compatible modified library](LIBRARY-REPLACEMENT.txt).
 
 ### Interface, guides and updates
+
+[Polish guide (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-Guide-PL.pdf) · [English guide (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-Guide-EN.pdf)
 
 The Settings menu opens separate windows for the guide, updates, window
 size, interface language, other preferences and About. Interface languages:
