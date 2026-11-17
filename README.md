@@ -5,9 +5,9 @@
 Narzędzie Windows do wyciągania napisów z filmów MKV oraz porządkowania plików ASS.
 Twórcy aplikacji: **Dierde i TOOCAGERO**.
 
-> **Nowe wydanie jest w przygotowaniu.** Gotowe pliki i instrukcje PDF pojawią się
-> w [Releases](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases) po zakończeniu testów.
-> Opis poniżej przedstawia docelowy układ tego wydania, a nie listę funkcji już opublikowanej paczki.
+> **Wydanie 1.5.0 Lite jest dostępne.** Pobierz [plik EXE i instrukcje PDF](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/tag/v1.5.0).
+> Lite wymaga osobno dostępnego MKVToolNix do pracy z filmami MKV.
+> **Full nie jest jeszcze udostępniony:** sprawdzamy komplet materiałów źródłowych dołączanych narzędzi. Nie dotyczy to działania Lite ani pracy z gotowymi ASS.
 
 ## Co robi aplikacja
 
@@ -26,25 +26,32 @@ Ochrona rozpoznanych struktur nie stanowi gwarancji dla każdego niestandardoweg
 
 | Wariant | Dla kogo | Obsługa MKVToolNix |
 | --- | --- | --- |
-| **Lite** | Masz już MKVToolNix | Program szuka go w typowych lokalizacjach. Gdy nie znajdzie, wskażesz folder ręcznie. |
-| **Full** | Nie chcesz osobno instalować MKVToolNix | EXE zawiera potrzebne narzędzia. Przy pierwszym uruchomieniu przygotuje je w wybranym lub domyślnym folderze; kolejne starty wykorzystają zachowane pliki. |
+| **Lite — dostępny** | Masz już MKVToolNix | Program szuka go w typowych lokalizacjach. Gdy nie znajdzie, wskażesz folder ręcznie. |
+| **Full — w przygotowaniu** | Nie chcesz osobno instalować MKVToolNix | EXE zawiera potrzebne narzędzia. Przy pierwszym uruchomieniu przygotuje je w wybranym lub domyślnym folderze; kolejne starty wykorzystają zachowane pliki. |
 
-Oba warianty mają oferować te same funkcje aplikacji, języki i instrukcje.
+Oba warianty zawierają te same funkcje aplikacji, języki i instrukcje.
+Nie wymagają instalatora ani instalacji Pythona. Przy pierwszym starcie zapisują
+potrzebne pliki w osobnym folderze. Kolejne starty używają tych samych plików;
+brakujące lub uszkodzone składniki są odtwarzane z EXE.
 Przygotowanie składników nie jest instalowaniem graficznej aplikacji MKVToolNix.
-Wariant Full nie będzie musiał pobierać składników z Internetu.
-Dokładne rozmiary i wyniki pomiarów startu podamy przy gotowym wydaniu.
+Full nie pobiera składników z Internetu.
+
+Lite 1.5.0 ma **60,03 MB** do pobrania. Jego przygotowane pliki zajmują dodatkowo
+około **59,57 MB**; pobrany EXE pozostaje na dysku. Wersja Full zbudowana do
+testów ma **110,93 MB**, lecz nie jest jeszcze publiczną paczką do pobrania.
 
 ## Ustawienia i instrukcje
 
-Rozwijane menu Ustawienia ma otwierać osobne okna: **Instrukcja**, **Aktualizacja**,
+Rozwijane menu Ustawienia otwiera osobne okna: **Instrukcja**, **Aktualizacja**,
 **Rozmiar okna**, **Język interfejsu**, dodatkowe preferencje i **O aplikacji**.
-Planowane języki interfejsu: polski, angielski, niemiecki i niderlandzki.
-Instrukcje PDF będą po polsku i angielsku: krótki start, dokładne kroki i obrazy
+Języki interfejsu: polski, angielski, niemiecki i niderlandzki.
+Instrukcje PDF są po polsku i angielsku: krótki start, dokładne kroki i obrazy
 pokazujące wybór plików, ekstrakcję, sortowanie, podgląd i zapis.
+Okna mają większe logo, własny tytuł i dolny przycisk **Zamknij**.
 
 ## Aktualizacje bez szukania na stronie
 
-Po wydaniu wersji z tą funkcją wystarczy otworzyć w programie
+Od wersji 1.5.0 wystarczy otworzyć w programie
 **Ustawienia → Aktualizacja → Sprawdź aktualizację**. Gdy będzie nowe wydanie,
 przycisk **Pobierz** pozwoli przejść do pobrania właściwego pliku z tego repozytorium.
 Nie trzeba będzie za każdym razem samodzielnie zaglądać na GitHuba ani mieć konta.
@@ -82,9 +89,9 @@ materiały źródłowe zostaną udostępnione wraz z odpowiednimi wydaniami.
 **Wolf-Subs Menager** is a Windows tool for extracting text subtitles from MKV
 videos and organising ASS subtitles. Created by **Dierde and TOOCAGERO**.
 
-> **The new release is being prepared.** Downloads and PDF guides will appear
-> in [Releases](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases) after testing.
-> The sections below describe the intended release, not an already published package.
+> **Version 1.5.0 Lite is available.** Download the [EXE and PDF guides](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/tag/v1.5.0).
+> Lite requires separately available MKVToolNix tools for MKV videos.
+> **Full is not yet published:** we are confirming the complete corresponding-source materials for its bundled tools. This does not affect Lite or working with existing ASS files.
 
 ### What it does
 
@@ -103,20 +110,26 @@ recognised structures is not a guarantee for every custom subtitle format or eff
 
 | Edition | Intended use | MKVToolNix |
 | --- | --- | --- |
-| **Lite** | You already have MKVToolNix | Searches common installation locations; manual folder selection remains available. |
-| **Full** | You do not want to install MKVToolNix separately | Contains the required tools. On first launch it prepares components in a selected or default folder; later launches reuse those files. |
+| **Lite — available** | You already have MKVToolNix | Searches common installation locations; manual folder selection remains available. |
+| **Full — in preparation** | You do not want to install MKVToolNix separately | Contains the required tools. On first launch it prepares components in a selected or default folder; later launches reuse those files. |
 
-Both editions are intended to offer the same application features, languages
-and guides. Full will not need to download its components. Exact download sizes
-and startup measurements will be listed with the completed release.
+Both editions contain the same application features, languages and guides.
+No installer or Python installation is required. The first launch prepares
+support files in a separate folder. Later launches reuse them; missing or
+damaged components can be restored from the EXE. Full does not download tools.
+
+Lite 1.5.0 is a **60.03 MB** download. Prepared files use about **59.57 MB** of
+additional disk space; the downloaded EXE also remains on disk. The Full build
+used for testing is **110.93 MB**, but is not a public download yet.
 
 ### Interface, guides and updates
 
-The Settings menu will open separate windows for the guide, updates, window
+The Settings menu opens separate windows for the guide, updates, window
 size, interface language, other preferences and About. Interface languages:
 Polish, English, German and Dutch. Illustrated PDF guides: Polish and English.
+Helper windows have a larger logo, their own title and a bottom **Close** button.
 
-After a version with update support has been released, open
+Starting with version 1.5.0, open
 **Settings → Update → Check for updates**. When a newer version is available,
 **Download** will lead to the matching release asset. A GitHub account is not
 required. Downloading does not automatically execute or replace the application.
