@@ -23,9 +23,9 @@ Ochrona rozpoznanych struktur nie stanowi gwarancji dla każdego niestandardoweg
 
 | Wariant | Dla kogo | Obsługa MKVToolNix |
 | --- | --- | --- |
-| **Lite** | [Masz już MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.1/Wolf-Subs-Menager-1.5.1-Lite.exe) | Program szuka go w typowych lokalizacjach. Gdy nie znajdzie, wskażesz folder ręcznie. |
-| **Full** | [Nie chcesz osobno instalować MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.1/Wolf-Subs-Menager-1.5.1-Full.exe) | EXE zawiera potrzebne narzędzia. Przy pierwszym uruchomieniu przygotuje je w wybranym lub domyślnym folderze; kolejne starty wykorzystają zachowane pliki. |
-| **Instrukcja PDF** | [Pobierz PDF — polski](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.1/Wolf-Subs-Menager-Guide-PL.pdf) · [Pobierz PDF — angielski](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.1/Wolf-Subs-Menager-Guide-EN.pdf) | Instrukcja krok po kroku z obrazkami, wspólna dla Lite i Full. |
+| **Lite** | [Masz już MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.2/Wolf-Subs-Menager-1.5.2-Lite.exe) | Program szuka go w typowych lokalizacjach. Gdy nie znajdzie, wskażesz folder ręcznie. |
+| **Full** | [Nie chcesz osobno instalować MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.2/Wolf-Subs-Menager-1.5.2-Full.exe) | EXE zawiera potrzebne narzędzia. Przy pierwszym uruchomieniu przygotuje je w wybranym lub domyślnym folderze; kolejne starty wykorzystają zachowane pliki. |
+| **Instrukcja PDF** | [Pobierz PDF — polski](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.2/Wolf-Subs-Menager-Guide-PL.pdf) · [Pobierz PDF — angielski](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.2/Wolf-Subs-Menager-Guide-EN.pdf) | Instrukcja krok po kroku z obrazkami, wspólna dla Lite i Full. |
 
 
 Oba warianty zawierają te same funkcje aplikacji, języki i instrukcje.
@@ -35,13 +35,19 @@ brakujące lub uszkodzone składniki są odtwarzane z EXE.
 Przygotowanie składników nie jest instalowaniem graficznej aplikacji MKVToolNix.
 Full nie pobiera składników z Internetu.
 
-Lite 1.5.1 ma **60,04 MB** do pobrania. Jego przygotowane pliki zajmują dodatkowo
-około **59,58 MB**; pobrany EXE pozostaje na dysku. Full ma **129,32 MB** do pobrania,
-a jego przygotowane pliki zajmują dodatkowo około **128,76 MB**.
+Lite 1.5.2 ma **60,10 MB** do pobrania. Jego przygotowane pliki zajmują dodatkowo
+około **59,64 MB**; pobrany EXE pozostaje na dysku. Full ma **129,39 MB** do pobrania,
+a jego przygotowane pliki zajmują dodatkowo około **128,82 MB**.
 
 Full korzysta z narzędzi MKVToolNix 103.0 w wydaniu MSYS2 UCRT64. [Odpowiadające źródła,
 receptury, patche i informacje o budowaniu](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Full-Third-Party-Sources.zip) są osobną paczką dla osób zainteresowanych kodem tych składników.
 Do zwykłej pracy wystarczy EXE. [Instrukcja użycia zmodyfikowanej biblioteki](LIBRARY-REPLACEMENT.txt).
+
+## Automatyczna podmiana od 1.5.2
+
+Przycisk **Aktualizuj** pobiera i sprawdza właściwy wariant, zachowuje kopię cofnięcia, zamyka program i uruchamia nowy EXE w dokładnie tym samym miejscu i pod tą samą nazwą. Ustawienia i katalog składników pozostają zachowane. Można anulować przed podmianą; niezapisane napisy i trwająca praca blokują aktualizację. Błąd startu uruchamia próbę przywrócenia poprzedniej wersji.
+
+**Jednorazowe przejście z 1.5.1:** stary przycisk Pobierz tylko pobiera plik. Pobierz 1.5.2, zamknij starą aplikację i ręcznie uruchom nowy EXE w folderze starego programu, pozostawiając tam plik ustawień. Dopiero następne aktualizacje korzystają z automatycznej podmiany.
 
 ## Poprawki 1.5.1
 
@@ -49,7 +55,7 @@ W Preferencjach wybierzesz zapis napisów w folderze wyników albo obok każdego
 
 ## Ustawienia i instrukcje
 
-[Instrukcja po polsku (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.1/Wolf-Subs-Menager-Guide-PL.pdf) · [Instrukcja po angielsku (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.1/Wolf-Subs-Menager-Guide-EN.pdf)
+[Instrukcja po polsku (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.2/Wolf-Subs-Menager-Guide-PL.pdf) · [Instrukcja po angielsku (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.2/Wolf-Subs-Menager-Guide-EN.pdf)
 
 Rozwijane menu Ustawienia otwiera osobne okna: **Instrukcja**, **Aktualizacja**,
 **Rozmiar okna**, **Język interfejsu**, dodatkowe preferencje i **O aplikacji**.
@@ -60,11 +66,7 @@ Okna mają większe logo, własny tytuł i dolny przycisk **Zamknij**.
 
 ## Aktualizacje bez szukania na stronie
 
-Od wersji 1.5.0 wystarczy otworzyć w programie
-**Ustawienia → Aktualizacja → Sprawdź aktualizację**. Gdy będzie nowe wydanie,
-przycisk **Pobierz** pozwoli przejść do pobrania właściwego pliku z tego repozytorium.
-Nie trzeba będzie za każdym razem samodzielnie zaglądać na GitHuba ani mieć konta.
-Pobranie nowej wersji nie oznacza automatycznego uruchomienia ani podmiany programu.
+W programie wybierz **Ustawienia → Aktualizacja → Sprawdź aktualizację → Aktualizuj**. Od 1.5.2 następne wydania mogą zastąpić ten sam EXE i uruchomić go ponownie z ustawieniami. Nie trzeba konta GitHub. W 1.5.1 pozostaje jednorazowe ręczne uruchomienie pobranego 1.5.2, opisane wyżej.
 
 ## Autorzy i składniki
 
@@ -116,9 +118,9 @@ recognised structures is not a guarantee for every custom subtitle format or eff
 
 | Edition | Intended use | MKVToolNix |
 | --- | --- | --- |
-| **Lite** | [You already have MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.1/Wolf-Subs-Menager-1.5.1-Lite.exe) | Searches common installation locations; manual folder selection remains available. |
-| **Full** | [You do not want to install MKVToolNix separately](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.1/Wolf-Subs-Menager-1.5.1-Full.exe) | Contains the required tools. On first launch it prepares components in a selected or default folder; later launches reuse those files. |
-| **PDF guide** | [Download Polish PDF](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.1/Wolf-Subs-Menager-Guide-PL.pdf) · [Download English PDF](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.1/Wolf-Subs-Menager-Guide-EN.pdf) | Illustrated step-by-step guide for both Lite and Full. |
+| **Lite** | [You already have MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.2/Wolf-Subs-Menager-1.5.2-Lite.exe) | Searches common installation locations; manual folder selection remains available. |
+| **Full** | [You do not want to install MKVToolNix separately](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.2/Wolf-Subs-Menager-1.5.2-Full.exe) | Contains the required tools. On first launch it prepares components in a selected or default folder; later launches reuse those files. |
+| **PDF guide** | [Download Polish PDF](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.2/Wolf-Subs-Menager-Guide-PL.pdf) · [Download English PDF](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.2/Wolf-Subs-Menager-Guide-EN.pdf) | Illustrated step-by-step guide for both Lite and Full. |
 
 
 Both editions contain the same application features, languages and guides.
@@ -126,13 +128,19 @@ No installer or Python installation is required. The first launch prepares
 support files in a separate folder. Later launches reuse them; missing or
 damaged components can be restored from the EXE. Full does not download tools.
 
-Lite 1.5.1 is a **60.04 MB** download. Prepared files use about **59.58 MB** of
+Lite 1.5.2 is a **60.10 MB** download. Prepared files use about **59.64 MB** of
 additional disk space; the downloaded EXE also remains on disk. Full is a
-**129.32 MB** download and uses about **128.76 MB** for prepared files.
+**129.39 MB** download and uses about **128.82 MB** for prepared files.
 
 Full uses MKVToolNix 103.0 from MSYS2 UCRT64. Its [corresponding sources, recipes,
 patches and build metadata](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Full-Third-Party-Sources.zip) are a separate package for developers.
 For normal use download the EXE. [Using a compatible modified library](LIBRARY-REPLACEMENT.txt).
+
+### Automatic replacement from 1.5.2
+
+**Update** downloads and verifies the matching edition, retains a rollback copy, closes the application and restarts the new EXE at exactly the same path and filename. Settings and the component folder are retained. Cancellation is available before replacement; ongoing work and unsaved subtitles block updating. A failed startup triggers an attempt to restore the previous version.
+
+**One-time transition from 1.5.1:** its old Download button only downloads a file. Download 1.5.2, close the old application and manually start the new EXE in the old application's folder with the settings file kept there. Subsequent updates can replace it automatically.
 
 ### Changes in 1.5.1
 
@@ -140,17 +148,14 @@ Preferences remember whether MKV subtitles go to the output folder or beside eac
 
 ### Interface, guides and updates
 
-[Polish guide (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.1/Wolf-Subs-Menager-Guide-PL.pdf) · [English guide (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.1/Wolf-Subs-Menager-Guide-EN.pdf)
+[Polish guide (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.2/Wolf-Subs-Menager-Guide-PL.pdf) · [English guide (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.2/Wolf-Subs-Menager-Guide-EN.pdf)
 
 The Settings menu opens separate windows for the guide, updates, window
 size, interface language, other preferences and About. Interface languages:
 Polish, English, German and Dutch. Illustrated PDF guides: Polish and English.
 Helper windows have a larger logo, their own title and a bottom **Close** button.
 
-Starting with version 1.5.0, open
-**Settings → Update → Check for updates**. When a newer version is available,
-**Download** will lead to the matching release asset. A GitHub account is not
-required. Downloading does not automatically execute or replace the application.
+Choose **Settings → Update → Check for updates → Update**. From 1.5.2, subsequent releases can replace the same EXE and restart it with your settings. No GitHub account is required. Version 1.5.1 requires the one-time manual launch of downloaded 1.5.2 described above.
 
 ### Authors and third-party components
 
