@@ -52,6 +52,21 @@ Pobranie nowej wersji nie oznacza automatycznego uruchomienia ani podmiany progr
 
 ## Autorzy i składniki
 
+### MKVToolNix
+
+**MKVToolNix** to zewnętrzny zestaw narzędzi autorstwa i pod opieką
+**Moritza Bunkusa (mosu)**, udostępniany na licencji **GNU GPL v2**.
+Pozwala między innymi odczytywać informacje o plikach Matroska, wyciągać
+ścieżki napisów i inne ścieżki oraz łączyć i dzielić pliki MKV.
+Nasza aplikacja korzysta z narzędzi `mkvmerge` i `mkvextract`.
+
+- [Oficjalna strona MKVToolNix](https://mkvtoolnix.download/)
+- [Pobierz MKVToolNix dla Windows od autora](https://mkvtoolnix.download/downloads.html#windows)
+- [Dokumentacja i opis narzędzi](https://mkvtoolnix.download/docs.html)
+- [Źródła MKVToolNix](https://mkvtoolnix.download/source.html)
+
+### Nasza aplikacja i pozostałe składniki
+
 Autorska część aplikacji: Dierde i TOOCAGERO. Twórcy nie zezwalają na jej
 modyfikacje ani zmiany funkcjonalności bez ich zgody. To publiczne repozytorium
 z wydaniami i dokumentacją; publiczny dostęp nie oznacza otwartej licencji na własny kod aplikacji.
@@ -107,6 +122,21 @@ After a version with update support has been released, open
 required. Downloading does not automatically execute or replace the application.
 
 ### Authors and third-party components
+
+#### MKVToolNix
+
+**MKVToolNix** is an external tool suite authored and maintained by
+**Moritz Bunkus (mosu)** and distributed under **GNU GPL v2**.
+Its features include inspecting Matroska files, extracting subtitle and other
+tracks, and merging or splitting MKV files. Our application uses the
+`mkvmerge` and `mkvextract` tools.
+
+- [Official MKVToolNix website](https://mkvtoolnix.download/)
+- [Download MKVToolNix for Windows from the author](https://mkvtoolnix.download/downloads.html#windows)
+- [Tool documentation](https://mkvtoolnix.download/docs.html)
+- [MKVToolNix source code](https://mkvtoolnix.download/source.html)
+
+#### Our application and other components
 
 The application's own work is by Dierde and TOOCAGERO. The authors do not permit
 modifications to their own part or its functionality without their consent.
