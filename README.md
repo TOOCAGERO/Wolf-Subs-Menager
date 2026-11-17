@@ -5,9 +5,9 @@
 Narzędzie Windows do wyciągania napisów z filmów MKV oraz porządkowania plików ASS.
 Twórcy aplikacji: **Dierde i TOOCAGERO**.
 
-> **Wydanie 1.5.0 Lite jest dostępne.** Pobierz [plik EXE i instrukcje PDF](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/tag/v1.5.0).
-> Lite wymaga osobno dostępnego MKVToolNix do pracy z filmami MKV.
-> **Full nie jest jeszcze udostępniony:** sprawdzamy komplet materiałów źródłowych dołączanych narzędzi. Nie dotyczy to działania Lite ani pracy z gotowymi ASS.
+> **Wydanie 1.5.0 Lite i Full jest dostępne.** [Pobierz program i instrukcje PDF](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/tag/v1.5.0).
+> **Full** zawiera potrzebne narzędzia — nie wymaga osobnego instalowania MKVToolNix.
+> **Lite** jest mniejszy i korzysta z MKVToolNix, który już masz.
 
 ## Co robi aplikacja
 
@@ -27,7 +27,7 @@ Ochrona rozpoznanych struktur nie stanowi gwarancji dla każdego niestandardoweg
 | Wariant | Dla kogo | Obsługa MKVToolNix |
 | --- | --- | --- |
 | **Lite — dostępny** | Masz już MKVToolNix | Program szuka go w typowych lokalizacjach. Gdy nie znajdzie, wskażesz folder ręcznie. |
-| **Full — w przygotowaniu** | Nie chcesz osobno instalować MKVToolNix | EXE zawiera potrzebne narzędzia. Przy pierwszym uruchomieniu przygotuje je w wybranym lub domyślnym folderze; kolejne starty wykorzystają zachowane pliki. |
+| **Full — dostępny** | Nie chcesz osobno instalować MKVToolNix | EXE zawiera potrzebne narzędzia. Przy pierwszym uruchomieniu przygotuje je w wybranym lub domyślnym folderze; kolejne starty wykorzystają zachowane pliki. |
 
 Oba warianty zawierają te same funkcje aplikacji, języki i instrukcje.
 Nie wymagają instalatora ani instalacji Pythona. Przy pierwszym starcie zapisują
@@ -37,8 +37,12 @@ Przygotowanie składników nie jest instalowaniem graficznej aplikacji MKVToolNi
 Full nie pobiera składników z Internetu.
 
 Lite 1.5.0 ma **60,03 MB** do pobrania. Jego przygotowane pliki zajmują dodatkowo
-około **59,57 MB**; pobrany EXE pozostaje na dysku. Wersja Full zbudowana do
-testów ma **110,93 MB**, lecz nie jest jeszcze publiczną paczką do pobrania.
+około **59,57 MB**; pobrany EXE pozostaje na dysku. Full ma **129,31 MB** do pobrania,
+a jego przygotowane pliki zajmują dodatkowo około **128,75 MB**.
+
+Full korzysta z narzędzi MKVToolNix 103.0 w wydaniu MSYS2 UCRT64. [Odpowiadające źródła,
+receptury, patche i informacje o budowaniu](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Full-Third-Party-Sources.zip) są osobną paczką dla osób zainteresowanych kodem tych składników.
+Do zwykłej pracy wystarczy EXE. [Instrukcja użycia zmodyfikowanej biblioteki](LIBRARY-REPLACEMENT.txt).
 
 ## Ustawienia i instrukcje
 
@@ -80,7 +84,7 @@ z wydaniami i dokumentacją; publiczny dostęp nie oznacza otwartej licencji na 
 
 MKVToolNix i pozostałe zewnętrzne składniki zachowują własne licencje i prawa
 ich autorów. Informacje o dołączonych wersjach, teksty licencji i wymagane
-materiały źródłowe zostaną udostępnione wraz z odpowiednimi wydaniami.
+materiały źródłowe są dołączone do odpowiedniego wydania.
 
 ---
 
@@ -89,9 +93,9 @@ materiały źródłowe zostaną udostępnione wraz z odpowiednimi wydaniami.
 **Wolf-Subs Menager** is a Windows tool for extracting text subtitles from MKV
 videos and organising ASS subtitles. Created by **Dierde and TOOCAGERO**.
 
-> **Version 1.5.0 Lite is available.** Download the [EXE and PDF guides](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/tag/v1.5.0).
-> Lite requires separately available MKVToolNix tools for MKV videos.
-> **Full is not yet published:** we are confirming the complete corresponding-source materials for its bundled tools. This does not affect Lite or working with existing ASS files.
+> **Version 1.5.0 Lite and Full are available.** [Download the application and PDF guides](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/tag/v1.5.0).
+> **Full** includes the tools and requires no separate MKVToolNix installation.
+> **Lite** is smaller and uses MKVToolNix you already have.
 
 ### What it does
 
@@ -111,7 +115,7 @@ recognised structures is not a guarantee for every custom subtitle format or eff
 | Edition | Intended use | MKVToolNix |
 | --- | --- | --- |
 | **Lite — available** | You already have MKVToolNix | Searches common installation locations; manual folder selection remains available. |
-| **Full — in preparation** | You do not want to install MKVToolNix separately | Contains the required tools. On first launch it prepares components in a selected or default folder; later launches reuse those files. |
+| **Full — available** | You do not want to install MKVToolNix separately | Contains the required tools. On first launch it prepares components in a selected or default folder; later launches reuse those files. |
 
 Both editions contain the same application features, languages and guides.
 No installer or Python installation is required. The first launch prepares
@@ -119,8 +123,12 @@ support files in a separate folder. Later launches reuse them; missing or
 damaged components can be restored from the EXE. Full does not download tools.
 
 Lite 1.5.0 is a **60.03 MB** download. Prepared files use about **59.57 MB** of
-additional disk space; the downloaded EXE also remains on disk. The Full build
-used for testing is **110.93 MB**, but is not a public download yet.
+additional disk space; the downloaded EXE also remains on disk. Full is a
+**129.31 MB** download and uses about **128.75 MB** for prepared files.
+
+Full uses MKVToolNix 103.0 from MSYS2 UCRT64. Its [corresponding sources, recipes,
+patches and build metadata](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Full-Third-Party-Sources.zip) are a separate package for developers.
+For normal use download the EXE. [Using a compatible modified library](LIBRARY-REPLACEMENT.txt).
 
 ### Interface, guides and updates
 
@@ -158,4 +166,4 @@ licence grant for the application's own code.
 
 MKVToolNix and other third-party components retain their own licences and
 authors' rights. Version notices, licence texts and required source materials
-will accompany the relevant releases.
+accompany the relevant release.
