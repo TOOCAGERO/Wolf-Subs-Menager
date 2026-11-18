@@ -24,9 +24,9 @@ Ochrona rozpoznanych struktur nie stanowi gwarancji dla każdego niestandardoweg
 
 | Wariant | Dla kogo | Obsługa MKVToolNix |
 | --- | --- | --- |
-| **Lite** | [Masz już MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.3/Wolf-Subs-Menager-1.5.3-Lite.exe) | Program szuka go w typowych lokalizacjach. Gdy nie znajdzie, wskażesz folder ręcznie. |
-| **Full** | [Nie chcesz osobno instalować MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.3/Wolf-Subs-Menager-1.5.3-Full.exe) | EXE zawiera potrzebne narzędzia. Przy pierwszym uruchomieniu przygotuje je w wybranym lub domyślnym folderze; kolejne starty wykorzystają zachowane pliki. |
-| **Instrukcja PDF** | [Pobierz PDF — polski](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.3/Wolf-Subs-Menager-Guide-PL.pdf) · [Pobierz PDF — angielski](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.3/Wolf-Subs-Menager-Guide-EN.pdf) | Instrukcja krok po kroku z obrazkami, wspólna dla Lite i Full. |
+| **Lite** | [Masz już MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.4/Wolf-Subs-Menager-1.5.4-Lite.exe) | Program szuka go w typowych lokalizacjach. Gdy nie znajdzie, wskażesz folder ręcznie. |
+| **Full** | [Nie chcesz osobno instalować MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.4/Wolf-Subs-Menager-1.5.4-Full.exe) | EXE zawiera potrzebne narzędzia. Przy pierwszym uruchomieniu przygotuje je w wybranym lub domyślnym folderze; kolejne starty wykorzystają zachowane pliki. |
+| **Instrukcja PDF** | [Pobierz PDF — polski](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.4/Wolf-Subs-Menager-Guide-PL.pdf) · [Pobierz PDF — angielski](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.4/Wolf-Subs-Menager-Guide-EN.pdf) | Instrukcja krok po kroku z obrazkami, wspólna dla Lite i Full. |
 
 
 Oba warianty zawierają te same funkcje aplikacji, języki i instrukcje.
@@ -36,13 +36,22 @@ brakujące lub uszkodzone składniki są odtwarzane z EXE.
 Przygotowanie składników nie jest instalowaniem graficznej aplikacji MKVToolNix.
 Full nie pobiera składników z Internetu.
 
-Lite 1.5.3 ma **60,23 MB** do pobrania. Jego przygotowane pliki zajmują dodatkowo
-około **59,77 MB**; pobrany EXE pozostaje na dysku. Full ma **129,52 MB** do pobrania,
-a jego przygotowane pliki zajmują dodatkowo około **128,95 MB**.
+Lite 1.5.4 ma **60,24 MB** do pobrania. Jego przygotowane pliki zajmują dodatkowo
+około **59,78 MB**; pobrany EXE pozostaje na dysku. Full ma **129,53 MB** do pobrania,
+a jego przygotowane pliki zajmują dodatkowo około **128,96 MB**.
 
 Full korzysta z narzędzi MKVToolNix 103.0 w wydaniu MSYS2 UCRT64. [Odpowiadające źródła,
 receptury, patche i informacje o budowaniu](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Full-Third-Party-Sources.zip) są osobną paczką dla osób zainteresowanych kodem tych składników.
 Do zwykłej pracy wystarczy EXE. [Instrukcja użycia zmodyfikowanej biblioteki](LIBRARY-REPLACEMENT.txt).
+
+## Poprawki 1.5.4
+
+- **Sam aktywny tag ASS `\pos(x,y)` wystarcza do TS.** Także `{\pos(100,200)}{\an7}`. Nie wymagamy wzorca planszy, fontu ani dodatkowych wierszy; nazwy Q1/Q100 nie decydują.
+- Pierwszeństwo mają ręczne korekty oraz rozpoznane OP/END i całe powiązane bloki. Samo i/b/u/s/an8 bez pos nie zmienia dialogu w TS. Sama reguła pos nie przepisuje tekstu, tagów, stylów ani warstw. Tłumaczenie rozbite na części pozostaje całością, także przy różnych stylach i przerwach.
+- Starsze zapisane DIALOG z pos jest ponownie oceniane. Format reguły 0/1 nie rozróżniał ręcznych decyzji od automatu, więc dawne świadome wyjątki trzeba sprawdzić; nowe ręczne korekty pozostają po zapisie i ponownym otwarciu.
+- Kopie aktualizatora i pliki przygotowania trafiają do osobnego, nieeksponowanego folderu na tym samym woluminie. Po zakończeniu pozostaje ten sam główny EXE pod tą samą nazwą, z ustawieniami i składnikami.
+- Przy przejściu ze starego 1.5.3 jego stary pomocnik może chwilowo utworzyć kopię obok EXE; nowa wersja archiwizuje wyłącznie potwierdzone pliki własnej sesji. Wymaga to uruchomienia nowego kodu — awaria przed jego startem pozostaje obsługiwana przez stary pomocnik. Nie usuwa się cudzych plików ani dawnych kopii znalezionych po nazwie.
+- Zachowane: PL bez automatycznego TL, pary EN/PL, fonty, rozdziały XML, Lite/Full, cztery języki i instrukcje PL/EN.
 
 ## Zmiany w 1.5.3
 
@@ -65,7 +74,7 @@ W Preferencjach wybierzesz zapis napisów w folderze wyników albo obok każdego
 
 ## Ustawienia i instrukcje
 
-[Instrukcja po polsku (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.3/Wolf-Subs-Menager-Guide-PL.pdf) · [Instrukcja po angielsku (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.3/Wolf-Subs-Menager-Guide-EN.pdf)
+[Instrukcja po polsku (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.4/Wolf-Subs-Menager-Guide-PL.pdf) · [Instrukcja po angielsku (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.4/Wolf-Subs-Menager-Guide-EN.pdf)
 
 Rozwijane menu Ustawienia otwiera osobne okna: **Instrukcja**, **Aktualizacja**,
 **Rozmiar okna**, **Język interfejsu**, dodatkowe preferencje i **O aplikacji**.
@@ -129,9 +138,9 @@ recognised structures is not a guarantee for every custom subtitle format or eff
 
 | Edition | Intended use | MKVToolNix |
 | --- | --- | --- |
-| **Lite** | [You already have MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.3/Wolf-Subs-Menager-1.5.3-Lite.exe) | Searches common installation locations; manual folder selection remains available. |
-| **Full** | [You do not want to install MKVToolNix separately](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.3/Wolf-Subs-Menager-1.5.3-Full.exe) | Contains the required tools. On first launch it prepares components in a selected or default folder; later launches reuse those files. |
-| **PDF guide** | [Download Polish PDF](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.3/Wolf-Subs-Menager-Guide-PL.pdf) · [Download English PDF](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.3/Wolf-Subs-Menager-Guide-EN.pdf) | Illustrated step-by-step guide for both Lite and Full. |
+| **Lite** | [You already have MKVToolNix](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.4/Wolf-Subs-Menager-1.5.4-Lite.exe) | Searches common installation locations; manual folder selection remains available. |
+| **Full** | [You do not want to install MKVToolNix separately](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.4/Wolf-Subs-Menager-1.5.4-Full.exe) | Contains the required tools. On first launch it prepares components in a selected or default folder; later launches reuse those files. |
+| **PDF guide** | [Download Polish PDF](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.4/Wolf-Subs-Menager-Guide-PL.pdf) · [Download English PDF](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.4/Wolf-Subs-Menager-Guide-EN.pdf) | Illustrated step-by-step guide for both Lite and Full. |
 
 
 Both editions contain the same application features, languages and guides.
@@ -139,13 +148,22 @@ No installer or Python installation is required. The first launch prepares
 support files in a separate folder. Later launches reuse them; missing or
 damaged components can be restored from the EXE. Full does not download tools.
 
-Lite 1.5.3 is a **60.23 MB** download. Prepared files use about **59.77 MB** of
+Lite 1.5.4 is a **60.24 MB** download. Prepared files use about **59.78 MB** of
 additional disk space; the downloaded EXE also remains on disk. Full is a
-**129.52 MB** download and uses about **128.95 MB** for prepared files.
+**129.53 MB** download and uses about **128.96 MB** for prepared files.
 
 Full uses MKVToolNix 103.0 from MSYS2 UCRT64. Its [corresponding sources, recipes,
 patches and build metadata](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.0/Wolf-Subs-Menager-1.5.0-Full-Third-Party-Sources.zip) are a separate package for developers.
 For normal use download the EXE. [Using a compatible modified library](LIBRARY-REPLACEMENT.txt).
+
+### Fixes in 1.5.4
+
+- **An active ASS `\pos(x,y)` tag alone is sufficient for TS**, including `{\pos(100,200)}{\an7}`. No screen-card pattern, font or multiple rows are required; Q1/Q100 names do not decide.
+- Manual choices, recognised OP/END and complete related blocks retain priority. Formatting i/b/u/s/an8 without pos does not turn dialogue into TS. The pos rule does not rewrite text, tags, styles or layers. Split translations stay together, including different styles and gaps between parts.
+- Older saved DIALOG with pos is re-evaluated. Rule format 0/1 did not distinguish manual choices from automatic results, so previous deliberate exceptions need review; new manual choices survive saving and reopening.
+- Update recovery and preparation files use a separate, non-exposed folder on the same volume. The same main EXE path and filename, settings and component folder are retained.
+- On the first transition from 1.5.3 its old helper may briefly create a sibling copy; the new version archives only confirmed files belonging to that update session. This requires the new code to start; a crash before that point still uses the old helper's recovery behaviour. Foreign files and unrelated older backups are not removed.
+- Preserved: Polish without automatic TL, EN/PL pairs, fonts, chapter XML, Lite/Full, four UI languages and PL/EN guides.
 
 ### Changes in 1.5.3
 
@@ -168,7 +186,7 @@ Preferences remember whether MKV subtitles go to the output folder or beside eac
 
 ### Interface, guides and updates
 
-[Polish guide (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.3/Wolf-Subs-Menager-Guide-PL.pdf) · [English guide (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.3/Wolf-Subs-Menager-Guide-EN.pdf)
+[Polish guide (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.4/Wolf-Subs-Menager-Guide-PL.pdf) · [English guide (PDF)](https://github.com/TOOCAGERO/Wolf-Subs-Menager/releases/download/v1.5.4/Wolf-Subs-Menager-Guide-EN.pdf)
 
 The Settings menu opens separate windows for the guide, updates, window
 size, interface language, other preferences and About. Interface languages:
